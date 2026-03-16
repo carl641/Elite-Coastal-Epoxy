@@ -310,8 +310,19 @@ h4 { font-size: 1.2rem; }
   box-shadow: var(--shadow-lg);
   min-width: 220px;
   padding: 8px 0;
-  margin-top: 12px;
+  padding-top: 20px;
+  margin-top: 0;
   z-index: 100;
+}
+
+.nav-dropdown .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
 }
 
 .nav-dropdown:hover .dropdown-menu {
