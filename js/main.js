@@ -1,7 +1,7 @@
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.querySelector('.mobile-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  var toggle = document.querySelector('.mobile-toggle');
+  var navLinks = document.querySelector('.nav-links');
 
   if (toggle && navLinks) {
     toggle.addEventListener('click', function () {
@@ -51,15 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
       observer.observe(el);
     });
   }
-
-  // Active nav link
-  var currentPath = window.location.pathname;
-  document.querySelectorAll('.nav-links > a, .dropdown-menu a').forEach(function (link) {
-    if (link.getAttribute('href') === currentPath ||
-        (currentPath !== '/' && link.getAttribute('href') !== '/' && currentPath.startsWith(link.getAttribute('href')))) {
-      link.classList.add('active');
-    }
-  });
 
   // Contact form submission
   var form = document.querySelector('.contact-form form');
