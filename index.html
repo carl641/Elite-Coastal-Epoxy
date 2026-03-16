@@ -33,41 +33,13 @@
       "longitude": -87.9036
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Daphne",
-        "sameAs": "https://en.wikipedia.org/wiki/Daphne,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Fairhope",
-        "sameAs": "https://en.wikipedia.org/wiki/Fairhope,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Foley",
-        "sameAs": "https://en.wikipedia.org/wiki/Foley,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Gulf Shores",
-        "sameAs": "https://en.wikipedia.org/wiki/Gulf_Shores,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Orange Beach",
-        "sameAs": "https://en.wikipedia.org/wiki/Orange_Beach,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Spanish Fort",
-        "sameAs": "https://en.wikipedia.org/wiki/Spanish_Fort,_Alabama"
-      },
-      {
-        "@type": "City",
-        "name": "Robertsdale",
-        "sameAs": "https://en.wikipedia.org/wiki/Robertsdale,_Alabama"
-      }
+      { "@type": "City", "name": "Daphne" },
+      { "@type": "City", "name": "Fairhope" },
+      { "@type": "City", "name": "Foley" },
+      { "@type": "City", "name": "Gulf Shores" },
+      { "@type": "City", "name": "Orange Beach" },
+      { "@type": "City", "name": "Spanish Fort" },
+      { "@type": "City", "name": "Robertsdale" }
     ],
     "openingHoursSpecification": [
       {
@@ -89,492 +61,398 @@
       "reviewCount": "127",
       "bestRating": "5"
     },
-    "priceRange": "$$",
-    "image": "https://www.elitecoastalepoxy.com/images/elite-coastal-epoxy-og.jpg",
-    "sameAs": [
-      "https://www.facebook.com/elitecoastalepoxy",
-      "https://www.instagram.com/elitecoastalepoxy"
-    ]
+    "priceRange": "$$"
   }
   </script>
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
+  <!-- ===== HEADER ===== -->
   <header class="site-header">
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <div class="container top-bar__inner">
-        <a href="tel:+12510000000" class="top-bar__phone">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (251) 000-0000
-        </a>
-        <span class="top-bar__hours">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Mon-Fri 7AM-6PM | Sat 8AM-4PM
-        </span>
+    <div class="header-top">
+      <div class="container">
+        <span>&#9742; <a href="tel:+12510000000">(251) 000-0000</a></span>
+        <span>Mon-Fri 7AM-6PM | Sat 8AM-4PM</span>
       </div>
     </div>
-
-    <!-- Main Navigation -->
-    <nav class="main-nav" aria-label="Primary navigation">
-      <div class="container main-nav__inner">
-        <a href="/" class="logo" aria-label="Elite Coastal Epoxy - Home">
-          <span class="logo__text"><span class="logo__elite-coastal">Elite Coastal</span> <span class="logo__epoxy">Epoxy</span></span>
-        </a>
-
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
+    <nav class="header-main">
+      <div class="container">
+        <a href="/" class="logo">Elite Coastal <span>Epoxy</span></a>
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-
-        <ul class="nav-menu" role="menubar">
-          <li class="nav-menu__item" role="none">
-            <a href="/" class="nav-menu__link active" role="menuitem">Home</a>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="/about.html" class="nav-menu__link" role="menuitem">About</a>
-          </li>
-          <li class="nav-menu__item nav-menu__item--dropdown" role="none">
-            <a href="#" class="nav-menu__link nav-menu__link--dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
-              Services
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li role="none"><a href="/services/garage-floor-coatings.html" class="dropdown-menu__link" role="menuitem">Garage Floor Coatings</a></li>
-              <li role="none"><a href="/services/commercial-flooring.html" class="dropdown-menu__link" role="menuitem">Commercial Flooring</a></li>
-              <li role="none"><a href="/services/patio-outdoor-coatings.html" class="dropdown-menu__link" role="menuitem">Patio &amp; Outdoor</a></li>
-              <li role="none"><a href="/services/metallic-epoxy.html" class="dropdown-menu__link" role="menuitem">Metallic Epoxy</a></li>
-            </ul>
-          </li>
-          <li class="nav-menu__item nav-menu__item--dropdown" role="none">
-            <a href="#" class="nav-menu__link nav-menu__link--dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
-              Locations
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li role="none"><a href="/locations/daphne-al.html" class="dropdown-menu__link" role="menuitem">Daphne</a></li>
-              <li role="none"><a href="/locations/fairhope-al.html" class="dropdown-menu__link" role="menuitem">Fairhope</a></li>
-              <li role="none"><a href="/locations/foley-al.html" class="dropdown-menu__link" role="menuitem">Foley</a></li>
-              <li role="none"><a href="/locations/gulf-shores-al.html" class="dropdown-menu__link" role="menuitem">Gulf Shores</a></li>
-              <li role="none"><a href="/locations/orange-beach-al.html" class="dropdown-menu__link" role="menuitem">Orange Beach</a></li>
-              <li role="none"><a href="/locations/spanish-fort-al.html" class="dropdown-menu__link" role="menuitem">Spanish Fort</a></li>
-              <li role="none"><a href="/locations/robertsdale-al.html" class="dropdown-menu__link" role="menuitem">Robertsdale</a></li>
-            </ul>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="/gallery.html" class="nav-menu__link" role="menuitem">Gallery</a>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="/contact.html" class="nav-menu__link" role="menuitem">Contact</a>
-          </li>
-          <li class="nav-menu__item nav-menu__item--cta" role="none">
-            <a href="/contact.html" class="btn btn-primary nav-cta" role="menuitem">Free Estimate</a>
-          </li>
-        </ul>
+        <div class="nav-links">
+          <a href="/" class="active">Home</a>
+          <a href="/about.html">About</a>
+          <div class="nav-dropdown">
+            <a href="#">Services &#9662;</a>
+            <div class="dropdown-menu">
+              <a href="/services/garage-floor-coatings.html">Garage Floor Coatings</a>
+              <a href="/services/commercial-flooring.html">Commercial Flooring</a>
+              <a href="/services/patio-outdoor-coatings.html">Patio &amp; Outdoor</a>
+              <a href="/services/metallic-epoxy.html">Metallic Epoxy</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <a href="#">Locations &#9662;</a>
+            <div class="dropdown-menu">
+              <a href="/locations/daphne-al.html">Daphne</a>
+              <a href="/locations/fairhope-al.html">Fairhope</a>
+              <a href="/locations/foley-al.html">Foley</a>
+              <a href="/locations/gulf-shores-al.html">Gulf Shores</a>
+              <a href="/locations/orange-beach-al.html">Orange Beach</a>
+              <a href="/locations/spanish-fort-al.html">Spanish Fort</a>
+              <a href="/locations/robertsdale-al.html">Robertsdale</a>
+            </div>
+          </div>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/contact.html" class="nav-cta">Free Estimate</a>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero" id="hero">
-      <div class="hero__overlay"></div>
-      <div class="container hero__inner">
-        <h1 class="hero__title">Transform Your Concrete Floors Into Stunning, Durable Showpieces</h1>
-        <p class="hero__subtitle">Baldwin County's Trusted Epoxy &amp; Polyaspartic Flooring Experts Since 2015</p>
-        <div class="hero__actions">
-          <a href="/contact.html" class="btn btn-primary btn-lg">Get Your Free Estimate</a>
-          <a href="/gallery.html" class="btn btn-white btn-lg">View Our Gallery</a>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <h1>Transform Your Concrete Floors Into Stunning, Durable Showpieces</h1>
+        <p class="subtitle">Baldwin County's Trusted Epoxy &amp; Polyaspartic Flooring Experts Since 2015</p>
+        <div class="btn-group">
+          <a href="/contact.html" class="btn btn-primary">Get Your Free Estimate</a>
+          <a href="/gallery.html" class="btn btn-white">View Our Gallery</a>
         </div>
-        <a href="tel:+12510000000" class="hero__phone">Or call us now: (251) 000-0000</a>
+        <p class="hero-phone">Or call us now: <a href="tel:+12510000000">(251) 000-0000</a></p>
       </div>
     </section>
 
-    <!-- ========== TRUST BAR ========== -->
-    <section class="trust-bar" aria-label="Trust indicators">
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar">
       <div class="container">
-        <ul class="trust-bar__list">
-          <li class="trust-bar__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>10-Year Transferable Warranty</span>
-          </li>
-          <li class="trust-bar__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>1-Day Installation Available</span>
-          </li>
-          <li class="trust-bar__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
-            <span>Made for Gulf Coast Climate</span>
-          </li>
-          <li class="trust-bar__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <span>UV &amp; Hot Tire Resistant</span>
-          </li>
-          <li class="trust-bar__item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>500+ Floors Completed in Baldwin County</span>
-          </li>
-        </ul>
+        <div class="trust-item"><span class="check">&#10003;</span> 10-Year Transferable Warranty</div>
+        <div class="trust-item"><span class="check">&#10003;</span> 1-Day Installation Available</div>
+        <div class="trust-item"><span class="check">&#10003;</span> Made for Gulf Coast Climate</div>
+        <div class="trust-item"><span class="check">&#10003;</span> UV &amp; Hot Tire Resistant</div>
+        <div class="trust-item"><span class="check">&#10003;</span> 500+ Floors Completed</div>
       </div>
     </section>
 
-    <!-- ========== INTRODUCTION SECTION ========== -->
-    <section class="section intro" id="about-intro">
+    <!-- ===== INTRODUCTION ===== -->
+    <section class="section">
       <div class="container">
-        <h2 class="section__title">Premium Floor Coatings Engineered for the Alabama Gulf Coast</h2>
-        <div class="intro__content">
+        <div class="section-header">
+          <h2>Premium Floor Coatings Engineered for the Alabama Gulf Coast</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
           <p>At Elite Coastal Epoxy, we specialize in high-performance epoxy and polyaspartic floor coatings designed specifically for the unique demands of Baldwin County's Gulf Coast climate. From the salt air of Gulf Shores to the humidity of Daphne and Fairhope, our coating systems are formulated to resist moisture, UV damage, and the extreme temperature swings that ordinary coatings simply can't handle.</p>
+          <br>
           <p>Our advanced polyaspartic technology allows us to complete most residential garage floors in a single day, giving you a beautiful, showroom-quality finish without the week-long disruption of traditional epoxy systems. Every installation begins with professional diamond grinding to ensure a permanent mechanical bond, followed by our multi-layer coating system that delivers unmatched durability, chemical resistance, and aesthetic appeal.</p>
-          <p class="intro__trust-signal"><strong>Locally owned and operated since 2015, we've coated over 500 floors across Baldwin County &mdash; and every one is backed by our 10-year transferable warranty.</strong></p>
+          <br>
+          <p><strong>Locally owned and operated since 2015, we've coated over 500 floors across Baldwin County &mdash; and every one is backed by our 10-year transferable warranty.</strong></p>
         </div>
       </div>
     </section>
 
-    <!-- ========== SERVICES PREVIEW ========== -->
-    <section class="section services-preview" id="services">
+    <!-- ===== SERVICES ===== -->
+    <section class="section section-alt">
       <div class="container">
-        <h2 class="section__title">Our Floor Coating Services</h2>
-        <p class="section__subtitle">Professional-grade coatings for every surface and setting</p>
+        <div class="section-header">
+          <h2>Our Floor Coating Services</h2>
+          <p>Professional-grade coatings for every surface and setting</p>
+        </div>
         <div class="grid-2">
-
-          <article class="service-card">
-            <div class="service-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3 class="service-card__title">Residential Garage Floors</h3>
-            <p class="service-card__description">Transform your garage into a clean, stunning space with our polyaspartic floor coatings. Choose from a wide range of flake blends and colors. Most jobs completed in just one day.</p>
-            <a href="/services/garage-floor-coatings.html" class="service-card__link">Learn More &rarr;</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </div>
-            <h3 class="service-card__title">Commercial &amp; Industrial</h3>
-            <p class="service-card__description">Durable, slip-resistant coatings for warehouses, restaurants, showrooms, and retail spaces. Our commercial systems withstand heavy traffic, chemicals, and daily wear and tear.</p>
-            <a href="/services/commercial-flooring.html" class="service-card__link">Learn More &rarr;</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            </div>
-            <h3 class="service-card__title">Patios &amp; Outdoor Spaces</h3>
-            <p class="service-card__description">UV-stable, slip-resistant coatings for pool decks, patios, driveways, and walkways. Engineered to handle Alabama's intense sun, rain, and coastal humidity year-round.</p>
-            <a href="/services/patio-outdoor-coatings.html" class="service-card__link">Learn More &rarr;</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <h3 class="service-card__title">Decorative Metallic &amp; Flake</h3>
-            <p class="service-card__description">Create a one-of-a-kind floor with our metallic epoxy or custom decorative flake systems. Perfect for showrooms, man caves, she sheds, and anywhere you want a wow factor.</p>
-            <a href="/services/metallic-epoxy.html" class="service-card__link">Learn More &rarr;</a>
-          </article>
-
+          <div class="card">
+            <div class="card-icon">&#127968;</div>
+            <h3>Residential Garage Floors</h3>
+            <p>Transform your garage into a clean, stunning space with our polyaspartic floor coatings. Choose from a wide range of flake blends and colors. Most jobs completed in just one day.</p>
+            <a href="/services/garage-floor-coatings.html" class="card-link">Learn More &rarr;</a>
+          </div>
+          <div class="card">
+            <div class="card-icon">&#127970;</div>
+            <h3>Commercial &amp; Industrial</h3>
+            <p>Durable, slip-resistant coatings for warehouses, restaurants, showrooms, and retail spaces. Our commercial systems withstand heavy traffic, chemicals, and daily wear and tear.</p>
+            <a href="/services/commercial-flooring.html" class="card-link">Learn More &rarr;</a>
+          </div>
+          <div class="card">
+            <div class="card-icon">&#9728;&#65039;</div>
+            <h3>Patios &amp; Outdoor Spaces</h3>
+            <p>UV-stable, slip-resistant coatings for pool decks, patios, driveways, and walkways. Engineered to handle Alabama's intense sun, rain, and coastal humidity year-round.</p>
+            <a href="/services/patio-outdoor-coatings.html" class="card-link">Learn More &rarr;</a>
+          </div>
+          <div class="card">
+            <div class="card-icon">&#10024;</div>
+            <h3>Decorative Metallic &amp; Flake</h3>
+            <p>Create a one-of-a-kind floor with our metallic epoxy or custom decorative flake systems. Perfect for showrooms, man caves, she sheds, and anywhere you want a wow factor.</p>
+            <a href="/services/metallic-epoxy.html" class="card-link">Learn More &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== PROCESS SECTION ========== -->
-    <section class="section process" id="process">
+    <!-- ===== PROCESS ===== -->
+    <section class="section">
       <div class="container">
-        <h2 class="section__title">Our Proven 4-Step Process</h2>
-        <p class="section__subtitle">Every floor gets the same professional-grade treatment</p>
-        <div class="process__steps">
-
-          <div class="process__step">
-            <div class="process__step-number">1</div>
-            <h3 class="process__step-title">Diamond Grind Preparation</h3>
-            <p class="process__step-desc">We use industrial diamond grinders to profile your concrete, removing contaminants and creating the ideal surface for a permanent mechanical bond. No shortcuts, no acid etching.</p>
+        <div class="section-header">
+          <h2>Our Proven 4-Step Process</h2>
+          <p>Every floor gets the same professional-grade treatment</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Diamond Grind Preparation</h3>
+            <p>We use industrial diamond grinders to profile your concrete, removing contaminants and creating the ideal surface for a permanent mechanical bond. No shortcuts, no acid etching.</p>
           </div>
-
-          <div class="process__step">
-            <div class="process__step-number">2</div>
-            <h3 class="process__step-title">Repair &amp; Prime</h3>
-            <p class="process__step-desc">Cracks, spalls, and imperfections are filled and repaired. A high-penetrating primer is applied to seal the concrete and provide the foundation for our coating system.</p>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Repair &amp; Prime</h3>
+            <p>Cracks, spalls, and imperfections are filled and repaired. A high-penetrating primer is applied to seal the concrete and provide the foundation for our coating system.</p>
           </div>
-
-          <div class="process__step">
-            <div class="process__step-number">3</div>
-            <h3 class="process__step-title">Decorative Flake Application</h3>
-            <p class="process__step-desc">Your chosen decorative flake or metallic pigment is broadcast into the base coat for a seamless, slip-resistant finish with depth and character unique to your floor.</p>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Decorative Flake Application</h3>
+            <p>Your chosen decorative flake or metallic pigment is broadcast into the base coat for a seamless, slip-resistant finish with depth and character unique to your floor.</p>
           </div>
-
-          <div class="process__step">
-            <div class="process__step-number">4</div>
-            <h3 class="process__step-title">Clear Polyaspartic Topcoat</h3>
-            <p class="process__step-desc">A UV-stable, high-gloss polyaspartic topcoat seals everything in. This final layer provides chemical resistance, hot tire resistance, and a finish that stays beautiful for years.</p>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Clear Polyaspartic Topcoat</h3>
+            <p>A UV-stable, high-gloss polyaspartic topcoat seals everything in. This final layer provides chemical resistance, hot tire resistance, and a finish that stays beautiful for years.</p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ========== WHY CHOOSE US ========== -->
-    <section class="section why-choose-us" id="why-us">
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section section-alt">
       <div class="container">
-        <h2 class="section__title">Why Choose Elite Coastal Epoxy</h2>
-        <p class="section__subtitle">What sets us apart from the competition</p>
+        <div class="section-header">
+          <h2>Why Choose Elite Coastal Epoxy</h2>
+          <p>What sets us apart from the competition</p>
+        </div>
         <div class="features-grid">
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
+          <div class="feature-item">
+            <div class="feature-icon">&#9729;&#65039;</div>
+            <div class="feature-content">
+              <h3>Built for Gulf Coast Climate</h3>
+              <p>Our coatings are formulated to withstand Baldwin County's high humidity, salt air, UV exposure, and temperature swings that destroy lesser products.</p>
             </div>
-            <h3 class="feature-card__title">Built for Gulf Coast Climate</h3>
-            <p class="feature-card__desc">Our coatings are formulated to withstand Baldwin County's high humidity, salt air, UV exposure, and temperature swings that destroy lesser products.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div class="feature-item">
+            <div class="feature-icon">&#9200;</div>
+            <div class="feature-content">
+              <h3>1-Day Installation</h3>
+              <p>Our polyaspartic system cures fast. Most residential garage floors are completed in a single day, and you can walk on your new floor the same evening.</p>
             </div>
-            <h3 class="feature-card__title">1-Day Installation</h3>
-            <p class="feature-card__desc">Our polyaspartic system cures fast. Most residential garage floors are completed in a single day, and you can walk on your new floor the same evening.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="feature-item">
+            <div class="feature-icon">&#128737;&#65039;</div>
+            <div class="feature-content">
+              <h3>10-Year Transferable Warranty</h3>
+              <p>We stand behind every floor we coat. Our 10-year warranty covers peeling, flaking, and delamination &mdash; and it transfers to the next homeowner if you sell.</p>
             </div>
-            <h3 class="feature-card__title">10-Year Transferable Warranty</h3>
-            <p class="feature-card__desc">We stand behind every floor we coat. Our 10-year warranty covers peeling, flaking, and delamination &mdash; and it transfers to the next homeowner if you sell.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="feature-item">
+            <div class="feature-icon">&#128205;</div>
+            <div class="feature-content">
+              <h3>Local Expertise</h3>
+              <p>We live and work in Baldwin County. We understand local concrete conditions, building codes, and the specific challenges of coastal Alabama construction.</p>
             </div>
-            <h3 class="feature-card__title">Local Expertise</h3>
-            <p class="feature-card__desc">We live and work in Baldwin County. We understand local concrete conditions, building codes, and the specific challenges of coastal Alabama construction.</p>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+          <div class="feature-item">
+            <div class="feature-icon">&#11088;</div>
+            <div class="feature-content">
+              <h3>Premium Materials Only</h3>
+              <p>We never cut corners on materials. We use professional-grade polyaspartic and epoxy resins &mdash; the same systems trusted by commercial and industrial facilities nationwide.</p>
             </div>
-            <h3 class="feature-card__title">Premium Materials Only</h3>
-            <p class="feature-card__desc">We never cut corners on materials. We use professional-grade polyaspartic and epoxy resins &mdash; the same systems trusted by commercial and industrial facilities nationwide.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SERVICE AREAS ========== -->
-    <section class="section service-areas" id="service-areas">
-      <div class="container">
-        <h2 class="section__title">Proudly Serving Baldwin County &amp; Beyond</h2>
-        <p class="section__subtitle">Professional epoxy floor coatings throughout the Alabama Gulf Coast</p>
-        <div class="city-pills">
-          <a href="/locations/daphne-al.html" class="city-pill">Daphne</a>
-          <a href="/locations/fairhope-al.html" class="city-pill">Fairhope</a>
-          <a href="/locations/foley-al.html" class="city-pill">Foley</a>
-          <a href="/locations/gulf-shores-al.html" class="city-pill">Gulf Shores</a>
-          <a href="/locations/orange-beach-al.html" class="city-pill">Orange Beach</a>
-          <a href="/locations/spanish-fort-al.html" class="city-pill">Spanish Fort</a>
-          <a href="/locations/robertsdale-al.html" class="city-pill">Robertsdale</a>
-          <a href="#" class="city-pill">Bay Minette</a>
-          <a href="#" class="city-pill">Loxley</a>
-          <a href="#" class="city-pill">Silverhill</a>
-          <a href="#" class="city-pill">Summerdale</a>
-          <a href="#" class="city-pill">Magnolia Springs</a>
-          <a href="#" class="city-pill">Elberta</a>
-          <a href="#" class="city-pill">Bon Secour</a>
-        </div>
-        <p class="service-areas__note">We also serve parts of <strong>Mobile County</strong>, including West Mobile, Saraland, and Semmes. <a href="/contact.html">Contact us</a> to confirm service availability in your area.</p>
-      </div>
-    </section>
-
-    <!-- ========== TESTIMONIALS ========== -->
-    <section class="section testimonials" id="testimonials">
-      <div class="container">
-        <h2 class="section__title">What Our Customers Are Saying</h2>
-        <p class="section__subtitle">Real reviews from Baldwin County homeowners and businesses</p>
-        <div class="testimonials__grid">
-
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"Our garage went from an embarrassing oil-stained mess to the best-looking room in the house. The team was professional, fast, and the flake finish looks incredible. Neighbors keep stopping by to ask who did it!"</p>
-            <footer class="testimonial-card__author">
-              <strong>Michael R.</strong> &mdash; Daphne, AL
-            </footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"I was worried about the humidity affecting the coating, but they explained their polyaspartic system and why it's better for our coastal climate. Two years later, the floor still looks brand new. The 10-year warranty gave us total peace of mind."</p>
-            <footer class="testimonial-card__author">
-              <strong>Jennifer T.</strong> &mdash; Fairhope, AL
-            </footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"We had Elite Coastal coat our restaurant kitchen floor. The anti-slip finish is perfect, it's easy to clean, and it handles all the grease and foot traffic without a scratch. Best investment we've made in the building."</p>
-            <footer class="testimonial-card__author">
-              <strong>Marco S.</strong> &mdash; Foley, AL
-            </footer>
-          </blockquote>
-
-        </div>
-
-        <!-- Review Badges -->
-        <div class="review-badges">
-          <div class="review-badge">
-            <strong>4.9/5</strong>
-            <span>Google Reviews</span>
-          </div>
-          <div class="review-badge">
-            <strong>5/5</strong>
-            <span>Facebook Reviews</span>
-          </div>
-          <div class="review-badge">
-            <strong>A+</strong>
-            <span>BBB Rating</span>
-          </div>
-          <div class="review-badge">
-            <strong>Best of Baldwin</strong>
-            <span>2023 &amp; 2024</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== FAQ SECTION ========== -->
-    <section class="section faq" id="faq">
+    <!-- ===== SERVICE AREAS ===== -->
+    <section class="section">
       <div class="container">
-        <h2 class="section__title">Frequently Asked Questions</h2>
-        <p class="section__subtitle">Answers to the most common questions about epoxy and polyaspartic floor coatings</p>
-        <div class="faq__accordion">
+        <div class="section-header">
+          <h2>Proudly Serving Baldwin County &amp; Beyond</h2>
+          <p>Professional epoxy floor coatings throughout the Alabama Gulf Coast</p>
+        </div>
+        <div class="city-links">
+          <a href="/locations/daphne-al.html" class="city-link">Daphne</a>
+          <a href="/locations/fairhope-al.html" class="city-link">Fairhope</a>
+          <a href="/locations/foley-al.html" class="city-link">Foley</a>
+          <a href="/locations/gulf-shores-al.html" class="city-link">Gulf Shores</a>
+          <a href="/locations/orange-beach-al.html" class="city-link">Orange Beach</a>
+          <a href="/locations/spanish-fort-al.html" class="city-link">Spanish Fort</a>
+          <a href="/locations/robertsdale-al.html" class="city-link">Robertsdale</a>
+          <a href="#" class="city-link">Bay Minette</a>
+          <a href="#" class="city-link">Loxley</a>
+          <a href="#" class="city-link">Silverhill</a>
+          <a href="#" class="city-link">Summerdale</a>
+          <a href="#" class="city-link">Magnolia Springs</a>
+          <a href="#" class="city-link">Elberta</a>
+          <a href="#" class="city-link">Bon Secour</a>
+        </div>
+        <p style="text-align: center; margin-top: 24px; color: var(--text-light);">We also serve parts of <strong>Mobile County</strong>, including West Mobile, Saraland, and Semmes. <a href="/contact.html">Contact us</a> to confirm service availability in your area.</p>
+      </div>
+    </section>
 
-          <details class="faq__item">
-            <summary class="faq__question">How long does installation take?</summary>
-            <div class="faq__answer">
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Are Saying</h2>
+          <p>Real reviews from Baldwin County homeowners and businesses</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"Our garage went from an embarrassing oil-stained mess to the best-looking room in the house. The team was professional, fast, and the flake finish looks incredible. Neighbors keep stopping by to ask who did it!"</p>
+            <p class="testimonial-author">Michael R.</p>
+            <p class="testimonial-location">Daphne, AL</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"I was worried about the humidity affecting the coating, but they explained their polyaspartic system and why it's better for our coastal climate. Two years later, the floor still looks brand new. The 10-year warranty gave us total peace of mind."</p>
+            <p class="testimonial-author">Jennifer T.</p>
+            <p class="testimonial-location">Fairhope, AL</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"We had Elite Coastal coat our restaurant kitchen floor. The anti-slip finish is perfect, it's easy to clean, and it handles all the grease and foot traffic without a scratch. Best investment we've made in the building."</p>
+            <p class="testimonial-author">Marco S.</p>
+            <p class="testimonial-location">Foley, AL</p>
+          </div>
+        </div>
+        <div class="badges">
+          <div class="badge">
+            <div class="badge-icon">&#9733;</div>
+            <div>4.9/5 Google Reviews</div>
+          </div>
+          <div class="badge">
+            <div class="badge-icon">&#9733;</div>
+            <div>5/5 Facebook Reviews</div>
+          </div>
+          <div class="badge">
+            <div class="badge-icon">&#9733;</div>
+            <div>A+ BBB Rating</div>
+          </div>
+          <div class="badge">
+            <div class="badge-icon">&#127942;</div>
+            <div>Best of Baldwin 2023 &amp; 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Answers to the most common questions about epoxy and polyaspartic floor coatings</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              How long does installation take?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>Most residential garage floors (2-3 car garages) are completed in a single day using our polyaspartic coating system. You can walk on the floor the same evening and park your car on it within 24 hours. Larger commercial projects may take 2-3 days depending on square footage and scope of work.</p>
             </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">How much does epoxy flooring cost in Baldwin County?</summary>
-            <div class="faq__answer">
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How much does epoxy flooring cost in Baldwin County?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>Pricing depends on the size of your space, condition of the existing concrete, and the coating system you choose. A standard 2-car garage typically ranges from $1,800 to $3,500 for a full polyaspartic flake system. We provide free, no-obligation estimates so you'll know the exact cost before any work begins.</p>
             </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">Will the coating peel or chip?</summary>
-            <div class="faq__answer">
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Will the coating peel or chip?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>Not when installed correctly. The number one reason coatings fail is improper surface preparation. We use industrial diamond grinders &mdash; never acid etching &mdash; to create a mechanical bond profile on your concrete. Combined with our professional-grade polyaspartic resins, our coatings are backed by a 10-year warranty against peeling, flaking, and delamination.</p>
             </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">Is polyaspartic better than epoxy?</summary>
-            <div class="faq__answer">
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Is polyaspartic better than epoxy?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>For most residential and coastal applications, yes. Polyaspartic coatings cure much faster (allowing same-day use), are UV-stable (they won't yellow in sunlight), offer superior chemical and abrasion resistance, and perform better in extreme temperatures. They're also more flexible, which helps them handle the thermal expansion common in Gulf Coast climates.</p>
             </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">Do you offer financing?</summary>
-            <div class="faq__answer">
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer financing?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>Yes! We offer flexible financing options to make your floor coating project affordable. Ask about our 0% interest plans during your free estimate consultation. We want to make sure every Baldwin County homeowner can enjoy a beautiful, durable floor without breaking the budget.</p>
             </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">What areas do you serve?</summary>
-            <div class="faq__answer">
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What areas do you serve?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
               <p>We serve all of Baldwin County, Alabama, including Daphne, Fairhope, Foley, Gulf Shores, Orange Beach, Spanish Fort, Robertsdale, Bay Minette, Loxley, Silverhill, Summerdale, Magnolia Springs, Elberta, and Bon Secour. We also serve parts of Mobile County. <a href="/contact.html">Contact us</a> to confirm availability in your area.</p>
             </div>
-          </details>
-
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== FINAL CTA ========== -->
-    <section class="section cta-section" id="cta">
-      <div class="container cta-section__inner">
-        <h2 class="cta-section__title">Ready to Transform Your Floor?</h2>
-        <p class="cta-section__subtitle">Get a free, no-obligation estimate for your home or business. Most projects completed in just one day.</p>
-        <div class="cta-section__actions">
-          <a href="/contact.html" class="btn btn-primary btn-lg">Schedule Your Free Estimate</a>
-          <a href="tel:+12510000000" class="btn btn-white btn-lg">Call (251) 000-0000</a>
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Transform Your Floor?</h2>
+        <p>Get a free, no-obligation estimate for your home or business. Most projects completed in just one day.</p>
+        <div class="btn-group">
+          <a href="/contact.html" class="btn btn-primary">Schedule Your Free Estimate</a>
+          <a href="tel:+12510000000" class="btn btn-white">Call (251) 000-0000</a>
         </div>
-        <div class="cta-section__trust">
-          <span>10-Year Warranty</span>
-          <span>Licensed &amp; Insured</span>
-          <span>Free Estimates</span>
-          <span>Locally Owned</span>
+        <div class="cta-trust">
+          <span>&#10003; 10-Year Warranty</span>
+          <span>&#10003; Licensed &amp; Insured</span>
+          <span>&#10003; Free Estimates</span>
+          <span>&#10003; Locally Owned</span>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer__grid">
-
-        <!-- Column 1: Brand -->
-        <div class="footer__col footer__col--brand">
-          <a href="/" class="footer__logo" aria-label="Elite Coastal Epoxy - Home">
-            <span class="logo__text"><span class="logo__elite-coastal">Elite Coastal</span> <span class="logo__epoxy">Epoxy</span></span>
-          </a>
-          <p class="footer__description">Premium epoxy and polyaspartic floor coatings for homes and businesses throughout Baldwin County, Alabama. Locally owned and operated since 2015.</p>
-          <div class="footer__contact-info">
-            <a href="tel:+12510000000" class="footer__contact-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              (251) 000-0000
-            </a>
-            <a href="mailto:info@elitecoastalepoxy.com" class="footer__contact-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@elitecoastalepoxy.com
-            </a>
-          </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">Elite Coastal <span>Epoxy</span></a>
+          <p>Premium epoxy and polyaspartic floor coatings for homes and businesses throughout Baldwin County, Alabama. Locally owned and operated since 2015.</p>
         </div>
-
-        <!-- Column 2: Services -->
-        <div class="footer__col">
-          <h4 class="footer__heading">Services</h4>
-          <ul class="footer__links">
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
             <li><a href="/services/garage-floor-coatings.html">Garage Floor Coatings</a></li>
             <li><a href="/services/commercial-flooring.html">Commercial Flooring</a></li>
             <li><a href="/services/patio-outdoor-coatings.html">Patio &amp; Outdoor Coatings</a></li>
             <li><a href="/services/metallic-epoxy.html">Metallic Epoxy</a></li>
           </ul>
         </div>
-
-        <!-- Column 3: Service Areas -->
-        <div class="footer__col">
-          <h4 class="footer__heading">Service Areas</h4>
-          <ul class="footer__links">
+        <div class="footer-section">
+          <h4>Service Areas</h4>
+          <ul>
             <li><a href="/locations/daphne-al.html">Daphne, AL</a></li>
             <li><a href="/locations/fairhope-al.html">Fairhope, AL</a></li>
             <li><a href="/locations/foley-al.html">Foley, AL</a></li>
@@ -584,22 +462,16 @@
             <li><a href="/locations/robertsdale-al.html">Robertsdale, AL</a></li>
           </ul>
         </div>
-
-        <!-- Column 4: Company -->
-        <div class="footer__col">
-          <h4 class="footer__heading">Company</h4>
-          <ul class="footer__links">
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="#faq">FAQ</a></li>
             <li><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
-
       </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer__bottom">
+      <div class="footer-bottom">
         <p>&copy; 2025 Elite Coastal Epoxy. All rights reserved.</p>
         <p>Licensed &amp; Insured in Alabama</p>
       </div>
