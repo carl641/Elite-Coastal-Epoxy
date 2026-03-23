@@ -1384,6 +1384,25 @@ h2, h3 {
   border: 0;
 }
 
+/* ===== AREAS SERVED LOGO ===== */
+.areas-served-logo {
+  text-align: center;
+  padding: 48px 0 0;
+}
+
+.areas-served-logo img {
+  display: inline-block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .areas-served-logo img {
+    max-width: 240px;
+  }
+}
+
 /* ===== ANIMATIONS ===== */
 @media (prefers-reduced-motion: no-preference) {
   .card,
