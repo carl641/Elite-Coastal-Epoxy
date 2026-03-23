@@ -10,10 +10,9 @@ Premium epoxy & polyaspartic floor coatings serving Baldwin County, Alabama.
   - Garage Floor Coatings (`services/garage-floor-coatings.html`)
   - Commercial Flooring (`services/commercial-flooring.html`)
   - Patio & Outdoor (`services/patio-outdoor-coatings.html`)
-  - Metallic Epoxy (`services/metallic-epoxy.html`)
   - Concrete Repair (`services/concrete-repair.html`)
-- **Locations** (7 city-specific pages)
-  - Daphne, Fairhope, Foley, Gulf Shores, Orange Beach, Spanish Fort, Robertsdale
+- **Locations** (city-specific pages)
+  - Fairhope, Spanish Fort, Daphne, Orange Beach, Gulf Shores, West Mobile / Spring Hill, Saraland
 - **Gallery** (`gallery.html`) - Project photo gallery
 - **FAQ** (`faq.html`) - Comprehensive FAQ with accordion
 - **Contact** (`contact.html`) - Contact form, info, special offers
@@ -42,7 +41,6 @@ Premium epoxy & polyaspartic floor coatings serving Baldwin County, Alabama.
 │   ├── garage-floor-coatings.html
 │   ├── commercial-flooring.html
 │   ├── patio-outdoor-coatings.html
-│   ├── metallic-epoxy.html
 │   └── concrete-repair.html
 └── locations/
     ├── daphne-al.html
