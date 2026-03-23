@@ -163,11 +163,11 @@ h2, h3 {
 
 /* ===== HEADER / NAVIGATION ===== */
 .site-header {
-  background: var(--dark);
+  background: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 .header-top {
@@ -202,15 +202,13 @@ h2, h3 {
 }
 
 .logo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--accent);
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
@@ -220,7 +218,7 @@ h2, h3 {
 }
 
 .nav-links a {
-  color: rgba(255,255,255,0.9);
+  color: var(--dark);
   font-weight: 500;
   font-size: 0.95rem;
   position: relative;
@@ -276,7 +274,7 @@ h2, h3 {
 .mobile-toggle span {
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: var(--dark);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -292,11 +290,11 @@ h2, h3 {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--dark);
+    background: #fff;
     flex-direction: column;
     padding: 24px;
     gap: 16px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
   }
 
   .nav-links.active {
