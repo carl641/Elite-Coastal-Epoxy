@@ -1391,15 +1391,16 @@ h2, h3 {
 }
 
 .areas-served-logo img {
-  display: inline-block;
-  max-width: 320px;
+  display: block;
+  max-width: 200px;
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .areas-served-logo img {
-    max-width: 240px;
+    max-width: 150px;
   }
 }
 
