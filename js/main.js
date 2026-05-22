@@ -7,13 +7,43 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.addEventListener('click', function () {
       navLinks.classList.toggle('active');
       toggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+      // Reset any opened dropdown accordions when the menu is reopened
+      if (!navLinks.classList.contains('active')) {
+        navLinks.querySelectorAll('.nav-dropdown.open').forEach(function (d) {
+          d.classList.remove('open');
+        });
+      }
     });
 
-    // Close menu when clicking a link
+    // Mobile accordion: tapping a dropdown's parent toggles it instead of navigating
+    navLinks.querySelectorAll('.nav-dropdown > a').forEach(function (parentLink) {
+      parentLink.addEventListener('click', function (e) {
+        if (window.matchMedia('(max-width: 900px)').matches) {
+          e.preventDefault();
+          var dropdown = parentLink.parentElement;
+          var wasOpen = dropdown.classList.contains('open');
+          // Close siblings so only one section is open at a time
+          navLinks.querySelectorAll('.nav-dropdown.open').forEach(function (d) {
+            d.classList.remove('open');
+          });
+          if (!wasOpen) {
+            dropdown.classList.add('open');
+          }
+        }
+      });
+    });
+
+    // Close menu when clicking a real link (not a dropdown toggle)
     navLinks.querySelectorAll('a').forEach(function (link) {
+      if (link.parentElement && link.parentElement.classList.contains('nav-dropdown') && link.parentElement.firstElementChild === link) {
+        return;
+      }
       link.addEventListener('click', function () {
         navLinks.classList.remove('active');
         toggle.setAttribute('aria-expanded', 'false');
+        navLinks.querySelectorAll('.nav-dropdown.open').forEach(function (d) {
+          d.classList.remove('open');
+        });
       });
     });
   }
