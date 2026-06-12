@@ -5,7 +5,7 @@ Premium epoxy & polyaspartic floor coatings serving Baldwin County, Alabama.
 ## Pages
 
 - **Home** (`index.html`) - Main landing page with hero, services, process, testimonials, FAQ
-- **About** (`about.html`) - Company story, values, team, certifications
+- **About** (`about.html`) - Company story, values, team
 - **Services**
   - Garage Floor Coatings (`services/garage-floor-coatings.html`)
   - Commercial Flooring (`services/commercial-flooring.html`)
