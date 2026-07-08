@@ -1431,6 +1431,122 @@ h2, h3 {
   }
 }
 
+/* ===== INDUSTRY TABS ===== */
+.ind-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.ind-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ind-tab {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+
+.ind-tab i {
+  color: var(--accent);
+}
+
+.ind-tab:hover {
+  color: var(--primary);
+}
+
+.ind-panels {
+  position: relative;
+}
+
+.ind-panel {
+  display: none;
+}
+
+.ind-panel .grid-2 {
+  align-items: start;
+}
+
+.ind-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ind-tag {
+  background: var(--bg-alt);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* wire each radio to its panel + active tab, purely in CSS */
+#ind-tab-1:checked ~ .ind-panels #ind-panel-1,
+#ind-tab-2:checked ~ .ind-panels #ind-panel-2,
+#ind-tab-3:checked ~ .ind-panels #ind-panel-3,
+#ind-tab-4:checked ~ .ind-panels #ind-panel-4,
+#ind-tab-5:checked ~ .ind-panels #ind-panel-5,
+#ind-tab-6:checked ~ .ind-panels #ind-panel-6 {
+  display: block;
+}
+
+#ind-tab-1:checked ~ .ind-tabs label[for="ind-tab-1"],
+#ind-tab-2:checked ~ .ind-tabs label[for="ind-tab-2"],
+#ind-tab-3:checked ~ .ind-tabs label[for="ind-tab-3"],
+#ind-tab-4:checked ~ .ind-tabs label[for="ind-tab-4"],
+#ind-tab-5:checked ~ .ind-tabs label[for="ind-tab-5"],
+#ind-tab-6:checked ~ .ind-tabs label[for="ind-tab-6"] {
+  color: var(--primary);
+  border-bottom-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ind-panel.visible,
+  #ind-tab-1:checked ~ .ind-panels #ind-panel-1,
+  #ind-tab-2:checked ~ .ind-panels #ind-panel-2,
+  #ind-tab-3:checked ~ .ind-panels #ind-panel-3,
+  #ind-tab-4:checked ~ .ind-panels #ind-panel-4,
+  #ind-tab-5:checked ~ .ind-panels #ind-panel-5,
+  #ind-tab-6:checked ~ .ind-panels #ind-panel-6 {
+    animation: ind-fade 0.35s ease;
+  }
+}
+
+@keyframes ind-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .ind-tabs {
+    gap: 2px;
+  }
+  .ind-tab {
+    padding: 12px 12px;
+    font-size: 0.9rem;
+  }
+}
+
 /* ===== SCHEMA ===== */
 .sr-only {
   position: absolute;
