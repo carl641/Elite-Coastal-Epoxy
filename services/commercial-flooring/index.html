@@ -83,52 +83,89 @@
     </div>
   </section>
 
-  <!-- ===== INDUSTRIES SERVED ===== -->
-  <section class="section service-detail">
-    <div class="container">
-      <div class="section-header">
-        <h2>Industries We Serve</h2>
-        <p>From restaurants to warehouses, our commercial flooring systems are built for the toughest environments</p>
-      </div>
-      <div class="industry-grid">
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-hospital"></i></span>
-          Restaurants &amp; Kitchens
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-store"></i></span>
-          Retail &amp; Showrooms
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-industry"></i></span>
-          Warehouses &amp; Distribution
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-car"></i></span>
-          Auto Shops &amp; Dealerships
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-building"></i></span>
-          Office Buildings
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-staff-snake"></i></span>
-          Medical &amp; Dental Offices
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
-          Gyms &amp; Fitness Centers
-        </div>
-        <div class="industry-item">
-          <span class="icon"><i class="fa-solid fa-car-side"></i></span>
-          Aircraft Hangars
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== COMMERCIAL SYSTEMS / BUILT FOR YOUR INDUSTRY ===== -->
   <section class="section section-alt" id="industries">
+    <style>
+      /* Scoped tab styles — self-contained so the component works even if the
+         cached global stylesheet is stale. Uses the site's existing variables. */
+      #industries .ind-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 40px;
+      }
+      #industries .ind-radio {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      #industries .ind-tab {
+        cursor: pointer;
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 20px;
+        font-family: 'Lora', Georgia, serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--text-light);
+        border-bottom: 3px solid transparent;
+        margin-bottom: -1px;
+        transition: color var(--transition), border-color var(--transition);
+        white-space: nowrap;
+      }
+      #industries .ind-tab i { color: var(--accent); }
+      #industries .ind-tab:hover { color: var(--primary); }
+      #industries .ind-panels { position: relative; }
+      #industries .ind-panel { display: none; }
+      #industries .ind-panel .grid-2 { align-items: start; }
+      #industries .ind-tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      #industries .ind-tag {
+        background: var(--bg-alt);
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      #industries #ind-tab-1:checked ~ .ind-panels #ind-panel-1,
+      #industries #ind-tab-2:checked ~ .ind-panels #ind-panel-2,
+      #industries #ind-tab-3:checked ~ .ind-panels #ind-panel-3,
+      #industries #ind-tab-4:checked ~ .ind-panels #ind-panel-4,
+      #industries #ind-tab-5:checked ~ .ind-panels #ind-panel-5,
+      #industries #ind-tab-6:checked ~ .ind-panels #ind-panel-6 {
+        display: block;
+        animation: ind-fade 0.35s ease;
+      }
+      #industries #ind-tab-1:checked ~ .ind-tabs label[for="ind-tab-1"],
+      #industries #ind-tab-2:checked ~ .ind-tabs label[for="ind-tab-2"],
+      #industries #ind-tab-3:checked ~ .ind-tabs label[for="ind-tab-3"],
+      #industries #ind-tab-4:checked ~ .ind-tabs label[for="ind-tab-4"],
+      #industries #ind-tab-5:checked ~ .ind-tabs label[for="ind-tab-5"],
+      #industries #ind-tab-6:checked ~ .ind-tabs label[for="ind-tab-6"] {
+        color: var(--primary);
+        border-bottom-color: var(--accent);
+      }
+      @keyframes ind-fade {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #industries .ind-panel { animation: none !important; }
+      }
+      @media (max-width: 600px) {
+        #industries .ind-tabs { gap: 2px; }
+        #industries .ind-tab { padding: 12px 12px; font-size: 0.9rem; }
+      }
+    </style>
     <div class="container">
       <div class="section-header">
         <h2>Built for the Floor Your Business Stands On</h2>
